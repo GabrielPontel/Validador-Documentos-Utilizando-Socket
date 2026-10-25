@@ -6,11 +6,11 @@ Trabalho da disciplina de Sistemas Distribuídos. O GBProtocol é um protocolo d
 
 ## Como funciona
 
-O cliente abre uma conexão TCP com o servidor, envia uma requisição com o tipo e o número do documento e espera a resposta. O servidor separa os campos, aplica as regras de validação e devolve apenas códigos: se o documento é válido e, quando houver, o código do erro. O cliente traduz esses códigos em uma mensagem para o usuário. Cada conexão atende uma requisição e é fechada em seguida.
+O servidor fica aguardando uma requisição. O cliente envia o tipo e o número do documento, o servidor separa os campos, aplica as regras de validação e devolve apenas códigos: se o documento é válido e, quando houver, o código do erro. O cliente traduz esses códigos em uma mensagem para o usuário.
 
 ```
-Program.cs (C#)  --- tipo_doc+CPF&doc+52998224725\n --->  servidor_gbprotocol.py (Python)
-                 <--- valido+1&erro+0\n -----------------
+Cliente  --- tipo_doc+CPF&doc+52998224725\n --->  Servidor
+         <--- valido+1&erro+0\n -----------------
 ```
 
 ## Diagrama do protocolo
@@ -20,6 +20,7 @@ sequenceDiagram
     participant C as Cliente (C#)
     participant S as Servidor (Python)
 
+    Note over S: Aguardando requisição
     C->>S: tipo_doc+CPF&doc+52998224725\n
     Note over S: Separa os pares por & e os campos por +<br/>Valida estrutura, tipo, caracteres e quantidade<br/>Calcula os dígitos verificadores
     S-->>C: valido+1&erro+0\n
@@ -31,7 +32,7 @@ Em caso de erro, o fluxo é o mesmo e só muda a resposta, por exemplo `valido+0
 ## Diagrama de estados
 
 <p align="center">
-  <img src="Diagrama%20de%20Estados%20-%20GBProtocol.png" alt="Diagrama de Estados - GBProtocol" width="520">
+  <img src="Diagrama%20de%20Estados%20-%20GBProtocol.png" alt="Diagrama de Estados - GBProtocol" width="700">
 </p>
 
 ## Formato das mensagens
@@ -75,14 +76,6 @@ A parte inteira do código identifica a família do problema.
 | 0 | 4.1 | Campo `doc` contém caracteres que não são dígitos |
 
 Um campo ausente e um campo presente com valor vazio recebem o mesmo código. São tratados como erro de estrutura (1.1): mensagem vazia, par sem o caractere `+`, campo desconhecido, campo repetido e requisição que não chega completa em 10 segundos.
-
-## Regras do servidor
-
-- Porta TCP **4851**
-- No máximo **10 conexões** simultâneas; acima disso a conexão é fechada sem resposta
-- Cada cliente é atendido em uma thread própria
-- Timeout de **10 segundos** por cliente
-- Requisições com mais de 300 caracteres são descartadas
 
 ## Estrutura do projeto
 
