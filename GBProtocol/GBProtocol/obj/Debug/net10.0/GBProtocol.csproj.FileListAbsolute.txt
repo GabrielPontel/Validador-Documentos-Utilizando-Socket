@@ -1,0 +1,15 @@
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\obj\Debug\net10.0\GBProtocol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\obj\Debug\net10.0\GBProtocol.AssemblyInfoInputs.cache
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\obj\Debug\net10.0\GBProtocol.AssemblyInfo.cs
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\obj\Debug\net10.0\GBProtocol.csproj.CoreCompileInputs.cache
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\bin\Debug\net10.0\GBProtocol.exe
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\bin\Debug\net10.0\GBProtocol.deps.json
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\bin\Debug\net10.0\GBProtocol.runtimeconfig.json
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\bin\Debug\net10.0\GBProtocol.dll
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\bin\Debug\net10.0\GBProtocol.pdb
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\obj\Debug\net10.0\GBProtocol.dll
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\obj\Debug\net10.0\refint\GBProtocol.dll
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\obj\Debug\net10.0\GBProtocol.pdb
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\obj\Debug\net10.0\GBProtocol.genruntimeconfig.cache
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\obj\Debug\net10.0\ref\GBProtocol.dll
+C:\Users\gbpon\OneDrive\Desktop\Sistemas Distribuidos-GBProtocol\GBProtocol\GBProtocol\obj\Debug\net10.0\GBProtocol.csproj.Up2Date
