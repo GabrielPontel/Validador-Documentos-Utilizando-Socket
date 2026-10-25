@@ -17,7 +17,7 @@ Cliente  --- tipo_doc+CPF&doc+52998224725\n --->  Servidor
 
 ```mermaid
 sequenceDiagram
-    participant C as Cliente (C#)
+    participant C as Cliente (C#35;)
     participant S as Servidor (Python)
 
     Note over S: Aguardando requisição
